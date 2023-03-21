@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>🐱 jordanjudt.com will be back 🐱</title>
+</head>
+
+<body>
+    <h1>Sorry!</h1>
+    <h2>We'll be back in a bit.</h2>
+    <p>
+        <a href="https://linkedin.com/in/jmjudt">LinkedIn</a>
+        <a href="https://github.com/javajudt">GitHub</a>
+        <a href="https://www.geocaching.com/p/?guid=671d8afd-41ed-4c50-8e8d-89ac675109fc">Geocaching</a>
+        <a href="https://facebook.com/AslanAndLeia">Meow</a>
+    </p>
+    <img id="img"></img>
+</body>
+<script>
+    const images = [
+        'https://i.imgur.com/z3NfyHz.jpg',
+        'https://i.imgur.com/t8hQqW1.jpg',
+        'https://i.imgur.com/h3qHLYz.jpg',
+        'https://i.imgur.com/D4P2vY0.jpg',
+        'https://i.imgur.com/Is1mxrH.jpg',
+        'https://i.imgur.com/r7eJ9Fw.jpg'
+    ]
+    const rand = Math.floor(Math.random() * 23277) % images.length
+    document.getElementById('img').setAttribute('src', images[rand]);
+</script>
+
+</html>
